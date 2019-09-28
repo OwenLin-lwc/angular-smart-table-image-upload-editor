@@ -1,0 +1,6 @@
+<div>
+  <ng2-smart-table [settings]="settings" [source]="source" (createConfirm)="onCreateConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
+</div>
+<div>
+  <span *ngIf="uploadItems.length">{{ uploadItems | json }}</span>
+</div>
